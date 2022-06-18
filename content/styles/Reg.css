@@ -1,0 +1,380 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	transition: 0.1s;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background-color: #f6f6f6;
+}
+
+header {
+	z-index: 9999;
+	height: 60px;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	background-color: #5e5e5e;
+}
+
+.marg {
+	height: 60px;
+}
+
+header .hdrlogo {
+	float: left;
+}
+
+header .headercontent {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+header .hdrlogo img {
+	width: 60px;
+	height: 40px;
+}
+
+.CONF_header {
+	float: left;
+	color: white;
+	/* margin-left: 15px; */
+	/* margin-right: 40px; */
+	/* height: 100%; */
+	font-size: 20px;
+	padding: 6px;
+	padding-left: 12px;
+}
+
+.regdiv {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 450px;
+}
+
+.regdiv form {
+	width: 450px;
+}
+
+.regdiv input {
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 30px;
+	padding: 5px;
+}
+
+.regdiv span {
+	margin: 10px;
+}
+
+.res {
+	cursor: pointer;
+}
+
+.regdiv input[type="submit"] {
+	background-color: gray;
+	color: white;
+	height: 50px;
+	font-weight: bold;
+}
+
+#RegionContext, #CityContext, #RegionContext, #ClubContext {
+	z-index: 1;
+	position: absolute;
+	margin-top: -10px;
+	background-color: white;
+	width: 450px;
+}
+
+#RegionContext span, #CityContext span, #RegionContext span, #ClubContext span{
+	display: block;
+}
+
+.regdiv span sup {
+	color: red;
+}
+
+.regdiv input:active {
+	border: 1px solid #5e5e5e;
+}
+
+header .lang {
+	height: 100%;
+	float: right;
+	text-align: right;
+	margin-right: 10px;
+}
+
+select, input {
+	cursor: pointer;
+}
+
+header li {
+	display: inline-block;
+	font-size: 15px;
+	margin: 5px;
+}
+
+.regdiv select {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+}
+
+header form[name="menuForm"] {
+	float: left;
+}
+
+header form[name="menuForm"] ul {
+	padding-top: 5px;
+}
+
+/*select:first-child {*/
+
+/*    width: 30px;*/
+
+/*}*/
+
+li input {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 15px;
+	width: 120px;
+	padding: 0;
+}
+
+#ru {
+	border: 0;
+	padding: 0;
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+#gb {
+	border: 0;
+	padding: 0;
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+#ua {
+	border: 0;
+	padding: 0;
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+.mobmenubtn {
+	display: none;
+}
+
+.dropbtn {
+	padding: 9px;
+	padding-bottom: 0;
+	padding-left: 11px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+	margin-top: 5px;
+	display: none;
+	border-radius: 5px;
+	position: absolute;
+	height: 105px;
+	background-color: #5e5e5e;
+	border: 2px solid gray;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content span {
+	cursor: pointer;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+.CONF_header span {
+	width: 80%;
+}
+
+footer {
+	z-index: 9999;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	background-color: #5e5e5e;
+}
+
+.footercontent {
+	padding: 20px;
+}
+
+.content {
+	margin: 70px;
+	overflow: hidden;
+}
+
+#menumob {
+	display: none;
+}
+
+.doJS {
+	float: right;
+	margin-right: 10px;
+	color: #2c353a;
+}
+
+.doJS:visited {
+	color: #2c353a;
+}
+
+.doJS:focus {
+	color: #2c353a;
+}
+
+.doJS:active {
+	color: #2c353a;
+}
+
+.regdiv .hide {
+	display: none;
+}
+
+hr {
+	margin: 10px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 0.5px solid #333;
+}
+
+@media screen and (min-width: 1550px) {
+	#menumob {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 1800px) {
+	.participantstable .fight {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	.participantstable .fight span {
+		height: auto;
+		margin-bottom: 20px;
+		font-size: 15px;
+	}
+	.participantstable .fight #num span {
+		font-size: 20px;
+	}
+	.participantstable .fight:nth-child(2n) {
+		margin: 0;
+		height: auto;
+		font-size: 15px;
+		width: 100%;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.footercontent {
+		font-size: 80%;
+	}
+	#menumob {
+		background-color: #5e5e5e;
+		position: fixed;
+		top: 55px;
+		padding-bottom: 5px;
+		width: 100%;
+	}
+	#menumob li {
+		display: inline-block;
+		margin: 5px;
+	}
+	#menumob ul {
+		text-align: left;
+	}
+	td {
+		padding-right: 0;
+	}
+	.participantstable {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.mobmenubtn {
+		cursor: pointer;
+		display: inline-block;
+		float: right;
+		margin-top: 3px;
+		margin-right: 10px;
+		color: white;
+		font-size: 35px;
+	}
+	footer .contacts {
+		width: 95%;
+	}
+	header {
+		height: 60px;
+		z-index: 9999;
+	}
+	#menumob {
+		z-index: 999;
+	}
+	header form {
+		display: none;
+	}
+	.CONF_header {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: 65%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		width: 180%;
+	}
+	.content {
+		padding: 10px;
+	}
+	.footercontent {
+		font-size: 15px;
+	}
+	.mobmenubtn {
+		cursor: pointer;
+	}
+	.CONF_header {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: 35%;
+	}
+}
